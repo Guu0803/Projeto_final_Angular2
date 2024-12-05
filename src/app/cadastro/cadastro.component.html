@@ -1,0 +1,16 @@
+<form [formGroup="cadastroForm" ] (ngSubmit)="cadastrar()">
+  <label for="username">
+    <input id="username" type="text" formControlName="username" placeholder="Nome">
+  </label>
+
+  <label for="email">
+    <input id="email" type="email" formControlName="email" placeholder="Email">
+  </label>
+
+  <label for="password">
+    <input id="password" type="password" formControlName="password" placeholder="Senha">
+  </label>
+
+  <button type="submit">Cadastrar</button>
+  <p>Ja possui uma conta? <a routerLink="/login">Login</a></p>
+</form>

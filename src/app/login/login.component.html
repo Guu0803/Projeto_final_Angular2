@@ -1,0 +1,12 @@
+<form [formGroup="cadastroForm" ] (ngSubmit)="login()">
+  <label for="username">
+    <input id="username" type="text" formControlName="username" placeholder="Nome">
+  </label>
+
+  <label for="password">
+    <input id="password" type="password" formControlName="password" placeholder="Senha">
+  </label>
+
+  <button type="submit">Login</button>
+  <p>Não possui uma conta? <a routerLink="/cadastro">Crie Aqui</a></p>
+</form>
